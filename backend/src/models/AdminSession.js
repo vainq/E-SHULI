@@ -1,0 +1,1 @@
+const{Schema,model}=require('mongoose');const S=new Schema({username:{type:String,required:true},otpHash:{type:String,required:true},otpExpires:{type:Date,required:true},verified:{type:Boolean,default:false}},{timestamps:true});module.exports=model('AdminSession',S);

@@ -1,0 +1,1 @@
+const{Schema,model}=require('mongoose');const S=new Schema({title:{type:String,required:true,index:true},subject:{type:String,required:true,index:true},level:{type:String,enum:['Secondary','TVET','University'],required:true,index:true},description:String,fileUrl:{type:String,required:true}},{timestamps:true});module.exports=model('ENote',S);

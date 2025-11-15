@@ -1,0 +1,1 @@
+const{Schema,model}=require('mongoose');const S=new Schema({title:{type:String,required:true,index:true},description:String,url:{type:String,required:true,unique:true},postedAt:Date,source:{type:String,default:'umucuruzi.com',index:true}},{timestamps:true});module.exports=model('Job',S);

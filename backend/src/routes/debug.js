@@ -1,0 +1,1 @@
+const{Router}=require('express');const{mongoose}=require('../db');const{requireAuth}=require('../middleware/auth');const r=Router();r.get('/db',requireAuth,async(_req,res)=>{const c=mongoose.connection;res.json({state:c.readyState,db:c.name,host:c.host,now:new Date().toISOString()});});module.exports=r;

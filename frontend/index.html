@@ -1,0 +1,18 @@
+<!-- apps/frontend/index.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Prevent stale caching during dev -->
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0" />
+    <title>E-SHULI</title>
+    <link rel="manifest" href="/manifest.webmanifest" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- IMPORTANT: load the JSX entry, not TSX -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

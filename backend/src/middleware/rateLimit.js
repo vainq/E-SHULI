@@ -1,0 +1,1 @@
+const rateLimit=require('express-rate-limit');exports.publicLimiter=rateLimit({windowMs:60e3,max:120,standardHeaders:true,legacyHeaders:false});exports.authLimiter=rateLimit({windowMs:9e5,max:20,standardHeaders:true,legacyHeaders:false,message:{error:'Too many attempts, try later.'}});exports.cronLimiter=rateLimit({windowMs:60e3,max:10,standardHeaders:true,legacyHeaders:false});

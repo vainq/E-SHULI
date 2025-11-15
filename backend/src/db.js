@@ -1,0 +1,1 @@
+const mongoose=require('mongoose');const{CONFIG}=require('./config');async function connectDB(){if(!CONFIG.MONGO_URI){console.error('MONGO_URI missing.');process.exit(1);}await mongoose.connect(CONFIG.MONGO_URI);console.log('MongoDB connected');}exports.connectDB=connectDB;exports.mongoose=mongoose;

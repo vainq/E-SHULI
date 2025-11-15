@@ -1,0 +1,1 @@
+export const ADS={papers:import.meta.env.VITE_ADSENSE_SLOT_PAPERS||'',enotes:import.meta.env.VITE_ADSENSE_SLOT_ENOTES||'',jobs:import.meta.env.VITE_ADSENSE_SLOT_JOBS||'',sticky:import.meta.env.VITE_ADSENSE_SLOT_STICKY||''};
